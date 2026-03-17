@@ -1,0 +1,19 @@
+name: mi primer workplace 
+
+on:
+  push:
+    branches: [ main ] 
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: ejecuta un saluda
+        uses: echo "hola mundo"
+
+      - name: listado de archivos
+        run: ls -R
