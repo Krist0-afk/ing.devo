@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: ejecuta un saluda
-        uses: echo "hola mundo"
+        run: echo "hola mundo"
 
       - name: listado de archivos
         run: ls -R
